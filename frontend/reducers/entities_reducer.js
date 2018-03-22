@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
 import sessionReducer from './session_reducer';
 
-const entitiesReducers = combineReducers({
+const entitiesReducer = combineReducers({
   session: sessionReducer
 });
 
-export default entitiesReducers;
+export default entitiesReducer;

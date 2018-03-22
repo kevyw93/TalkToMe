@@ -1,6 +1,6 @@
 import React from 'react';
-import Modal from 'react-modal';
-import {Redirect} from "react-router-dom";
+import {Switch} from "react-router-dom";
+import Login from "./login";
 
 class Landing extends React.Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class Landing extends React.Component {
   render() {
     return(
       <main>
-        Hi Welcome
+        <Login props={this.props} />
       </main>
     );
   }

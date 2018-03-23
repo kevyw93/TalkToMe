@@ -1,8 +1,8 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-class Login extends React.Component {
+class Signup extends React.Component {
   constructor(props) {
-    debugger
     super(props);
     this.state = {email:'', password: ''};
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -18,8 +18,7 @@ class Login extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    debugger
-    this.props.processForm(user);
+    this.props.signup(user);
   }
 
   render() {
@@ -28,11 +27,12 @@ class Login extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <input type="text" value={this.state.email} onChange={this.handleChange("email")} placeholder="E-mail"/>
           <input type="password" value={this.state.password} onChange={this.handleChange("password")} placeholder="Password"/>
-          <button>Login</button>
+        <button>Sign Up</button>
         </form>
+        <Link to="/">Login</Link>
       </div>
     );
   }
 }
 
-export default Login;
+export default Signup;

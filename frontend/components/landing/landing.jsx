@@ -1,6 +1,8 @@
 import React from 'react';
-import {Switch} from "react-router-dom";
-import Login from "./login";
+import {Switch, Route} from "react-router-dom";
+import LoginContainer from "../login/login_container";
+import SignUpContainer from '../signup/signup_container';
+
 
 class Landing extends React.Component {
   constructor(props) {
@@ -8,9 +10,13 @@ class Landing extends React.Component {
   }
 
   render() {
+
     return(
       <main>
-        <Login props={this.props} />
+        <Switch>
+          <Route exact path="/" component={LoginContainer} />
+          <Route exact path="/signup" component={SignUpContainer} />
+        </Switch>
       </main>
     );
   }

@@ -12,7 +12,7 @@ class Landing extends React.Component {
   render() {
 
     return(
-      <main>
+      <main className="landing-page">
         <Switch>
           <Route exact path="/" component={LoginContainer} />
           <Route exact path="/signup" component={SignUpContainer} />

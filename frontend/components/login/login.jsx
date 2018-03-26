@@ -23,13 +23,20 @@ class Login extends React.Component {
 
   render() {
     return(
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <input type="text" value={this.state.email} onChange={this.handleChange("email")} placeholder="E-mail"/>
-          <input type="password" value={this.state.password} onChange={this.handleChange("password")} placeholder="Password"/>
-          <button>Login</button>
-        </form>
-        <Link to="/signup">Sign Up</Link>
+      <div className="login-page">
+        <div className="logo-container">
+          <img src="https://d9hhrg4mnvzow.cloudfront.net/www.kidguard.com/56517f57-calls.png"
+          className="logo"/>
+        </div>
+
+        <div className="login-form-container">
+          <form onSubmit={this.handleSubmit} className="login-form">
+            <input type="text" value={this.state.email} onChange={this.handleChange("email")} placeholder="E-mail"/>
+            <input type="password" value={this.state.password} onChange={this.handleChange("password")} placeholder="Password"/>
+            <button>Login</button>
+          </form>
+          <Link to="/signup">Sign Up</Link>
+        </div>
       </div>
     );
   }

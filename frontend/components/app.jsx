@@ -5,7 +5,7 @@ import LoginContainer from './login/login_container';
 import {Switch, Route} from 'react-router-dom';
 const App = () => {
   return (
-    <div>
+    <div className="landing-container">
       <Switch>
         <Route path="/" component={LandingContainer} />
 

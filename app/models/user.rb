@@ -4,7 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  # protect_from_forgery prepend: true
-  # before_action :authenticate_user!
+
 
 end

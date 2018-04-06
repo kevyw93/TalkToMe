@@ -24,9 +24,12 @@ class Login extends React.Component {
   render() {
     return(
       <div className="login-page">
-        <div className="logo-container">
-          <img src="https://d9hhrg4mnvzow.cloudfront.net/www.kidguard.com/56517f57-calls.png"
-          className="logo"/>
+        <div className="outer-logo-container">
+          <div className="inner-logo-container">
+            <img src="https://gbatemp.net/attachments/gbatemp_discord-png.77834/"
+            className="logo"/>
+            <h1 className="title-logo">TalkToMe</h1>
+          </div>
         </div>
 
         <div className="login-form-container">

@@ -1,22 +1,19 @@
-body {
-  background: url("http://www.hdwallpaperspulse.com/wp-content/uploads/2016/09/20/fantastic-best-wallpaper-hd.jpg");
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-}
-#root {
-  height: 100%;
-  width: 100%;
-}
+
 .landing-page{
   display: flex;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   justify-content: center;
   align-items: center;
 }
 
-.landing-container{
-  height: 100%;
-  width: 100%;
+.component-container{
+  background: url("http://www.hdwallpaperspulse.com/wp-content/uploads/2016/09/20/fantastic-best-wallpaper-hd.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hello{
+  overflow:hidden;
 }

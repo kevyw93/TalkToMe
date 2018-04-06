@@ -1,17 +1,28 @@
 .login-page {
   display:flex;
+  height: 394px;
 }
-.logo-container {
+.outer-logo-container {
   width: 198px;
+  background-color:#dadde6;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-logo-container{
+
 }
 .logo{
-  padding: 30px;
   width: 125px;
-  height: 125px;
-
-
+  height: 141px;
+}
+.title-logo{
+  height:24px;
+  font-family: 'Oswald', sans-serif;
+  color: #728ad8;
 }
 .login-form-container{
+  background-color: #262a34;
   width: 340px;
 }
 

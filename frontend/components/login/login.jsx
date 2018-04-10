@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 class Login extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {email:'', password: ''};
+    this.state =  {email:'', password: ''};
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
@@ -17,7 +17,7 @@ class Login extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const user = Object.assign({}, this.state);
+    const user = {'user' :{'email': this.state.email, 'password': this.state.password}};
     this.props.login(user);
   }
 

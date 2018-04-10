@@ -11,7 +11,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # POST /resource
   def create
-    debugger
     @user = User.find_by(email: params[:user][:email])
     errors = {}
     if @user
@@ -22,7 +21,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     @user = User.new(users_params)
     if @user.save
       sign_in @user
-      render partial: 'users/_user'
+      render '/api/users/show'
     else
       errors[:login_error] = ["Doesn't fit the requirement"]
       render json: errors, status: 406

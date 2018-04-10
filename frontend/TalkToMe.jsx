@@ -4,10 +4,10 @@ import configureStore from './store/store';
 import Root from './components/root';
 import {login, signup, logout} from './utils/session_api_util';
 
+window.logout = logout;
 
 document.addEventListener("DOMContentLoaded", () => {
   let store;
-
 
   if (window.currentUser) {
     const preloadedState = {session: { currentUser: window.currentUser }};

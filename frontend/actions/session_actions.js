@@ -3,6 +3,7 @@ export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';
 import * as ApiUtil from '../utils/session_api_util';
 
 export const receiveCurrentUser = (currentUser) => {
+
  return {
    type: RECEIVE_CURRENT_USER,
    currentUser

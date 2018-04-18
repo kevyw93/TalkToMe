@@ -30,6 +30,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'pry-rails'
 gem 'jquery-rails'
+gem 'pusher'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

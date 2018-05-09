@@ -2,6 +2,7 @@ import React from 'react';
 import {Switch, Route} from "react-router-dom";
 import LoginContainer from "../login/login_container";
 import SignUpContainer from '../signup/signup_container';
+import MainPageContainer from "../main/main_page_container";
 
 
 class Landing extends React.Component {
@@ -11,12 +12,16 @@ class Landing extends React.Component {
 
   render() {
     let landing;
+    let userEmail;
+    if(this.props.userEmail){
+      userEmail = this.props.userEmail;
+    }
     if (this.props.loggedIn) {
       landing =
       <div className="logged-in-container">
-        Hi
-        <button className="logout" onClick={this.props.logout}>Logout</button>;
-      </div>;
+        <MainPageContainer />
+        <button className="logout" onClick={this.props.logout}>Logout</button>
+    </div>;
     }else{
       landing =
       <div className="landing-page">

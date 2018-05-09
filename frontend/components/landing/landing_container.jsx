@@ -3,8 +3,13 @@ import Landing from './landing';
 import {login, signup, logout} from '../../actions/session_actions';
 
 const mapStateToProps = (state, ownProps) => {
+  let userName;
+  if(state.entities.session.currentUser){
+    userName = state.entities.session.currentUser.email;
+  }
   return {
-    loggedIn: Boolean(state.session.currentUser),
+    userEmail: userName,
+    loggedIn: Boolean(state.entities.session.currentUser),
     errors: state.errors.session,
     formType: ownProps.location.pathname.slice(1),
   };

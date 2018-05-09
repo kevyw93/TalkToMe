@@ -4,7 +4,7 @@ import SignUp from './signup';
 
 const mapStateToProps = (state) => {
   return {
-    loggedIn: state.session.currentUser,
+    loggedIn: state.entities.session.currentUser,
   };
 };
 

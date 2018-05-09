@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
   root to: 'static_pages#root'
-
+  # match "/pusher/auth" => "pusher#{auth}", via: :post
   namespace :api, defaults: {format: :json} do
     resources :users, only: [:create, :show, :update, :index]
   end

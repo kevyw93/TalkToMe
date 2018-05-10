@@ -19,6 +19,7 @@
 // });
 
 import React from 'react';
+import FriendBarContainer from './friend_bar_container';
 var Peer = require('simple-peer');
 
 // var peer1 = new SimplePeer({initiator: true});
@@ -69,6 +70,7 @@ class Main extends React.Component {
     return(
       <main>
         Hi
+        <FriendBarContainer />
       </main>
     );
   }

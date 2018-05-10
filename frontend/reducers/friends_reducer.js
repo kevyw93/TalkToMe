@@ -1,4 +1,4 @@
-import {ALL_USERS} from "../../actions/friend_actions";
+import {ALL_USERS} from "../actions/friend_actions";
 
 const preloadedState = {
   allUsers: []

@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import MainPage from './main_page';
-
+import {logout} from '../../actions/session_actions';
 const mapStateToProps = (state) => {
   return {
     email: state.entities.session.currentUser.email
@@ -9,7 +9,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-
+    logout: () => dispatch(logout())
   };
 };
 

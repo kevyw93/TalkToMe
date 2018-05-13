@@ -3,7 +3,7 @@ import FriendBar from "./friend_bar";
 import {getAllUsers} from "../../actions/friend_actions";
 
 const mapStateToProps = (state) =>{
-  debugger
+
   return {
     friends: state.entities.friends.allUsers
   };

@@ -20,8 +20,7 @@ class Landing extends React.Component {
       landing =
       <div className="logged-in-container">
         <MainPageContainer />
-        <button className="logout" onClick={this.props.logout}>Logout</button>
-    </div>;
+      </div>;
     }else{
       landing =
       <div className="landing-page">
